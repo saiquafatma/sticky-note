@@ -1,0 +1,141 @@
+body {
+    font-family: 'Pacifico', cursive;
+    background: linear-gradient(to bottom right, #3498db, #2ecc71);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+header h1 a {
+    text-decoration: none;
+    color: rgb(41, 175, 135);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.left-container {
+    width: 50%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.color-and-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+}
+
+.color {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.color label {
+    margin-right: 10px;
+}
+
+.buttons {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.right-container {
+    width: 50%;
+    padding: 20px;
+    overflow-y: auto; 
+    max-height: calc(100vh - 120px); 
+}
+
+.right-container-notes {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+    max-height: 100%; 
+    overflow-y: auto;
+}
+
+
+.right-container h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.notes-not-added {
+    text-align: center;
+    color: white;
+}
+
+.note {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.note:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.remove-button {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-size: 14px
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.remove-button:hover {
+    color: #555;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .left-container,
+    .right-container {
+        width: 100%;
+    }
+}
